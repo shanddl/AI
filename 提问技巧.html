@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>AI提问技巧完全指南</title>
+    <style>
+        body { font-family: '微软雅黑', Arial, sans-serif; line-height: 1.6; max-width: 1200px; margin: 20px auto; padding: 0 20px }
+        table { width: 100%; border-collapse: collapse; margin: 25px 0 }
+        th { background-color: #f8f9fa; padding: 12px; text-align: left }
+        td { padding: 12px; border-top: 1px solid #dee2e6 }
+        tr:nth-child(even) { background-color: #f8f9fa }
+        .warning { color: #dc3545 }
+        .success { color: #28a745 }
+        h1 { color: #2c3e50; border-bottom: 2px solid #3498db }
+        h2 { color: #2c3e50; margin-top: 35px }
+        ul { padding-left: 20px }
+        li { margin: 10px 0 }
+        .badge { 
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+        .emoji { font-size: 1.2em }
+    </style>
+</head>
+<body>
+
+<h1>AI提问技巧完全指南</h1>
+
+<h2>📋 核心提问技巧</h2>
+<table>
+    <thead>
+        <tr>
+            <th width="15%">技巧分类</th>
+            <th width="25%">说明</th>
+            <th>示例</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><span class="badge" style="background:#3498db;color:white">明确需求</span></td>
+            <td>避免模糊问题，明确目标、背景、期望结果</td>
+            <td>
+                <span class="warning emoji">❌ 模糊提问：</span>如何学习编程？<br>
+                <span class="success emoji">✅ 明确提问：</span>如何从零开始学习Python，在三个月内达到能开发简单网页应用的水平？需包含学习路径和资源推荐。
+            </td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e67e22;color:white">分解问题</span></td>
+            <td>将大问题拆解为多个小问题</td>
+            <td>
+                <span class="warning emoji">❌ 笼统提问：</span>如何写一篇论文？<br>
+                <span class="success emoji">✅ 分步提问：</span><br>
+                1. 社会学论文选题方向推荐（主题：社交媒体与青少年心理健康）<br>
+                2. 如何设计该论文的研究方法？
+            </td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#2ecc71;color:white">关键词法</span></td>
+            <td>嵌入关键术语提升针对性</td>
+            <td>
+                <span class="warning emoji">❌ 普通提问：</span>推荐几本书<br>
+                <span class="success emoji">✅ 带关键词提问：</span>推荐5本2023年出版的悬疑小说，适合喜欢反转结局的读者，需包含豆瓣评分&gt;8.5的作品
+            </td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#9b59b6;color:white">格式限定</span></td>
+            <td>通过条件限制控制答案结构</td>
+            <td>
+                <span class="warning emoji">❌ 开放提问：</span>总结气候变化的影响<br>
+                <span class="success emoji">✅ 限制性提问：</span>用Markdown表格总结气候变化对农业的三大影响，每项需包含数据来源（限2010年后研究）和应对措施
+            </td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#e74c3c;color:white">背景补充</span></td>
+            <td>提供上下文减少猜测空间</td>
+            <td>
+                <span class="warning emoji">❌ 无背景提问：</span>如何优化广告投放？<br>
+                <span class="success emoji">✅ 带背景提问：</span>我们是一家母婴用品电商，抖音月预算5万元，当前ROI为1.2。请提供提升ROI到1.8的具体策略（排除增加预算选项）
+            </td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#1abc9c;color:white">语气调整</span></td>
+            <td>通过角色设定改变回答风格</td>
+            <td>
+                <span class="warning emoji">❌ 默认提问：</span>解释量子计算<br>
+                <span class="success emoji">✅ 角色设定：</span>假设你是初中科学老师，用生活案例比喻解释量子计算原理
+            </td>
+        </tr>
+        <tr>
+            <td><span class="badge" style="background:#f1c40f;color:black">迭代优化</span></td>
+            <td>通过追问逐步逼近理想答案</td>
+            <td>
+                <span class="success">第一轮提问：</span>推荐适合徒步的登山鞋品牌<br>
+                <span class="success">第二轮追问：</span>上述品牌中，哪款适合雨季山地徒步？需Vibram大底且重量&lt;800克/双，预算1500元以内
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>🚀 进阶场景示例</h2>
+<table>
+    <thead>
+        <tr>
+            <th width="20%">应用场景</th>
+            <th width="30%">低效提问</th>
+            <th>高效提问模板</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>数据分析</td>
+            <td>"分析销售数据"</td>
+            <td>
+                <div class="success">用Python分析附件sales.csv：</div>
+                1. 计算2023年Q3各地区环比增长率<br>
+                2. 输出前5大滞销商品可视化柱状图
+            </td>
+        </tr>
+        <tr>
+            <td>创意生成</td>
+            <td>"写一个广告文案"</td>
+            <td>
+                <div class="success">为智能手表撰写抖音短视频脚本：</div>
+                - 目标人群：25-35岁职场女性<br>
+                - 突出卖点：压力监测功能<br>
+                - 时长15秒
+            </td>
+        </tr>
+        <tr>
+            <td>学术研究</td>
+            <td>"找关于AI的文献"</td>
+            <td>
+                <div class="success">推荐近3年AI在乳腺癌诊断中的应用研究：</div>
+                - 需包含CNN与Transformer对比<br>
+                - 限SCI一区期刊<br>
+                - 附DOI链接
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>⚠️ 重要注意事项</h2>
+<ul>
+    <li><strong>避免问题堆砌：</strong>将"如何学习编程并找到工作同时保持工作生活平衡？"拆分为：
+        <ul>
+            <li>零基础编程学习路径设计</li>
+            <li>程序员求职简历优化方法</li>
+            <li>IT行业工作压力管理技巧</li>
+        </ul>
+    </li>
+    <li><strong>否定条件前置：</strong>"推荐日本关西旅行地，要求：<br>
+        - 避开东京/大阪等大城市<br>
+        - 包含小众文化遗产<br>
+        - 每日预算&lt;800元人民币"</li>
+    <li><strong>对比指令模板：</strong>"从计算效率、准确率、硬件需求三个维度对比BERT和GPT-4在文本摘要任务中的表现"</li>
+    <li><strong>知识边界声明：</strong>"根据2023年Nature期刊最新研究，说明室温超导材料的可行性及技术挑战"</li>
+</ul>
+
+</body>
+</html>
